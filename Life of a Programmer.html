@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life of a Programmer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    padding:20px;
+    font-family:Arial, sans-serif;
+    line-height:1.2;
+    overflow-x:hidden;
+}
+
+/* HEADINGS */
+h2, h3, h4{
+    margin:20px 0 10px;
+}
+
+p{
+    margin:10px 0;
+}
+
+/* TABLE RESPONSIVE */
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    margin:20px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+    background:#fff;
+}
+
+th, td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    background:#111;
+    color:#fff;
+}
+
+/* LISTS */
+ul{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* BUTTON SECTION */
+
+.button-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.button-container form{
+    flex:1;
+}
+
+.button-container button{
+    width:100%;
+    max-width:200px;
+    padding:10px 20px;
+    border: 2px solid aqua;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:0.3s ease;
+}
+
+/* HOME BUTTON */
+
+.blogspot{
+    background:black;
+    color:#fff;
+}
+
+.blogspot:hover{
+    background:gold;
+    color:black;
+    font-weight:bold;
+}
+
+/* NEXT BUTTON */
+
+.next-article{
+    background:black;
+    color:#fff;
+}
+
+.next-article:hover{
+    background:gold;
+    color:black;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:5px;
+    background:#111;
+    color:#fff;
+    margin-top:10px;
+    font-size:clamp(0.85rem, 2vw, 1rem);
+    border-radius:10px;
+}
+
+/* TABLET */
+@media (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    h3{
+        font-size:1.3rem;
+    }
+
+    h4{
+        font-size:1.1rem;
+    }
+
+    p, li, td, th{
+        font-size:0.95rem;
+    }
+
+    .button-container{
+        justify-content:center;
+    }
+
+    button{
+        width:100%;
+        max-width:300px;
+    }
+}
+
+/* MOBILE */
+@media (max-width:480px){
+
+    body{
+        padding:12px;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    h3{
+        font-size:1.15rem;
+    }
+
+    h4{
+        font-size:1rem;
+    }
+
+    p, li{
+        font-size:0.92rem;
+    }
+
+    th, td{
+        padding:10px;
+        font-size:0.9rem;
+    }
+
+    .button-container{
+        flex-direction:inline;
+        align-items:center;
+    }
+
+    button{
+        width:100%;
+    }
+
+    footer{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h2>TOPIC: THE LIFE OF A PROGRAMMER</h2>
+
+<h2>
+So you’re thinking about programming. Maybe you’re in your first CS class,
+watching YouTube tutorials, or trying to decide if this “coding thing” is for you.
+Forget the movie version where hackers type in green text and say “I’m in.”
+The real life of a programmer is way more relatable, and honestly, more fun.
+Here’s what it’s actually like when you’re starting out.
+</h2>
+
+<h3>1. Your Day Isn’t All Coding. It’s Mostly Learning</h3>
+
+<p>When you’re new, 90% of your time is spent being confused. That’s normal.</p>
+
+<p><u><i>What a student/newbie day looks like:</i></u></p>
+
+<ul>
+    <li>Classes or tutorials: You watch someone build a project in 20 minutes. It takes you 3 hours. This is fine.</li>
+    <li>Google + Stack Overflow: You will search “how to center a div” 100 times.</li>
+    <li>Breaking stuff: Your code won’t work. Then it’ll work for the wrong reason.</li>
+    <li>Small wins: The first time Hello World shows up, you’ll feel unstoppable.</li>
+    <li>Pro tip: Nobody is born knowing this.</li>
+</ul>
+
+<h3>2. The Skills You Actually Need Aren’t What You Think</h3>
+
+<p><u><i>You don’t need to be a math genius. You do need these:</i></u></p>
+
+<div class="table-container">
+<table>
+    <tr>
+        <th>Skill</th>
+        <th>Why Students Need It</th>
+        <th>How to Practice</th>
+    </tr>
+
+    <tr>
+        <td>Patience</td>
+        <td>Bugs will take hours to fix</td>
+        <td>Debug one error per day</td>
+    </tr>
+
+    <tr>
+        <td>Googling</td>
+        <td>Docs won't always make sense</td>
+        <td>Learn to phrase questions properly</td>
+    </tr>
+
+    <tr>
+        <td>Breaking problems down</td>
+        <td>Big assignments are scary</td>
+        <td>Split projects into small tasks</td>
+    </tr>
+
+    <tr>
+        <td>Reading Code</td>
+        <td>You'll learn more from others' code</td>
+        <td>Study small GitHub projects</td>
+    </tr>
+
+    <tr>
+        <td>Asking for help</td>
+        <td>Tutorial hell is real</td>
+        <td>Use Discord, Reddit, or classmates</td>
+    </tr>
+</table>
+</div>
+
+<h3>3. Imposter Syndrome Hits Early. Here’s How to Handle It</h3>
+
+<p>
+Week 3 of CS101: You look around and think “Everyone gets this but me.”
+<b>They don’t.</b>
+</p>
+
+<ul>
+    <li>That kid who finished the lab fast? They practiced beforehand.</li>
+    <li>The YouTuber who codes perfectly? They edited out errors.</li>
+    <li>Your professor? They still Google syntax.</li>
+</ul>
+
+<p>
+<b>Rule for newbies:</b> Compare yourself to who you were last month.
+</p>
+
+<h3>4. Your First Projects Will Be Ugly. Ship Them Anyway</h3>
+
+<p>Your first website will look old-school. Perfect.</p>
+
+<ul>
+    <li>Finished > perfect</li>
+    <li>Portfolio starts now</li>
+    <li>You learn by doing</li>
+</ul>
+
+<h3>5. The Myths vs Reality Check</h3>
+
+<div class="table-container">
+<table>
+    <tr>
+        <th>Myth</th>
+        <th>Reality for Students</th>
+    </tr>
+
+    <tr>
+        <td>You need to know everything</td>
+        <td>You need to know how to find everything</td>
+    </tr>
+
+    <tr>
+        <td>You’ll memorize syntax</td>
+        <td>You’ll memorize concepts</td>
+    </tr>
+
+    <tr>
+        <td>Coding is lonely</td>
+        <td>Best code happens in teams</td>
+    </tr>
+
+    <tr>
+        <td>If it doesn’t work quickly, you’re bad</td>
+        <td>Some bugs take days</td>
+    </tr>
+
+    <tr>
+        <td>You need a CS degree</td>
+        <td>Projects and persistence matter too</td>
+    </tr>
+</table>
+</div>
+
+<h3>6. How to Actually Start Without Burning Out</h3>
+
+<ul>
+    <li>Pick one language and stick with it</li>
+    <li>Code 30 minutes daily</li>
+    <li>Build projects publicly</li>
+    <li>Take breaks</li>
+    <li>Find coding friends</li>
+</ul>
+
+<h4>So Is It Worth It?</h4>
+
+<p>
+Yes, if you like solving puzzles and building things.
+</p>
+
+<h4>
+The life of a programmer starts the moment you decide
+to keep going after the first error message.
+</h4>
+
+<div class="button-container">
+
+    <form action="Blog.html">
+        <button class="blogspot">Home</button>
+    </form>
+
+    <form action="How to become a Web Dev.html">
+        <button class="next-article">Next Blog</button>
+    </form>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 AzMatt Tech | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

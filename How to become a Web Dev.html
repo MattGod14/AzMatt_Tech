@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to become a Web Dev</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    padding:20px;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#111;
+}
+
+/* HEADINGS */
+
+h2, h3{
+    margin-bottom:15px;
+}
+
+p{
+    margin:15px 0;
+}
+
+/* TABLE RESPONSIVE */
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    margin:20px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+    background:#fff;
+}
+
+th, td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    background:#111;
+    color:#fff;
+}
+
+/* LISTS */
+
+ul{
+    margin:15px 0 20px 20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* BUTTON SECTION */
+
+.button-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.button-container form{
+    flex:1;
+}
+
+.button-container button{
+    width:100%;
+    max-width:200px;
+    padding:10px 20px;
+    border: 2px solid aqua;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:0.3s ease;
+}
+
+/* HOME BUTTON */
+
+.blogspot{
+    background:black;
+    color:#fff;
+}
+
+.blogspot:hover{
+    background:gold;
+    color:black;
+    font-weight:bold;
+}
+
+/* NEXT BUTTON */
+
+.next-article{
+    background:black;
+    color:#fff;
+}
+
+.next-article:hover{
+    background:gold;
+    color:black;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:5px;
+    background:#111;
+    color:#fff;
+    margin-top:10px;
+    font-size:clamp(0.85rem, 2vw, 1rem);
+    border-radius:10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    h3{
+        font-size:1.1rem;
+    }
+
+    table{
+        min-width:600px;
+    }
+
+    .button-container{
+        flex-direction:inline;
+    }
+
+    .button-container button{
+        max-width:100%;
+    }
+}
+
+@media (max-width:480px){
+
+    body{
+        padding:10px;
+    }
+
+    h2{
+        font-size:1.1rem;
+    }
+
+    h3{
+        font-size:1rem;
+    }
+
+    p, li{
+        font-size:0.95rem;
+    }
+
+    th, td{
+        padding:10px;
+        font-size:0.9rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>TOPIC: HOW TO BECOME A WEB DEVELOPER</h2>
+
+<h2>
+If you want to build websites that people actually use, you’re choosing one of the most flexible, in-demand skills out there. The line between “designer” and “developer” is blurry these days, so I’ll break it down into 3 paths you can take, then give you the exact steps to go from zero to hired.
+</h2>
+
+<h3>1. Pick Your Lane: Designer vs Developer vs Both</h3>
+
+<div class="table-container">
+<table>
+    <tr>
+        <th>Role</th>
+        <th>What You Do</th>
+        <th>Core Skills</th>
+        <th>Tools You'll Use</th>
+    </tr>
+
+    <tr>
+        <td>Web Designer</td>
+        <td>Makes sites look good and also makes it feel intuitive</td>
+        <td>UI/UX, color, typography, layout, user psychology</td>
+        <td>Figma, Adobe XD, Webflow, Framer</td>
+    </tr>
+
+    <tr>
+        <td>Front-End Developer</td>
+        <td>Turns designs into interactive websites</td>
+        <td>HTML, CSS, JavaScript</td>
+        <td>VS Code, React, Tailwind, Git</td>
+    </tr>
+
+    <tr>
+        <td>Full-Stack Developer</td>
+        <td>Builds the whole thing: design + code + server</td>
+        <td>Databases, APIs, Auth and more</td>
+        <td>Node.js, Next.js, PostgreSQL, Vercel</td>
+    </tr>
+</table>
+</div>
+
+<h3>2. The 6-Month Learning Plan That Actually Works</h3>
+
+<b>Phase 1: Foundations, Weeks 1-4</b>
+
+<ul>
+    <li>Learn HTML/CSS deeply. Not just "div" soup. Understand the box model, Flexbox, Grid, and responsive design. Free resource: MDN Web Docs.</li>
+
+    <li>Build 3 static pages: portfolio, blog layout, product card.</li>
+
+    <li>Design fundamentals. Even if you code, learn CRAP: Contrast, Repetition, Alignment, Proximity.</li>
+
+    <li>Copy 5 landing pages you love in Figma pixel-for-pixel. You’ll learn more in 10 hours than in any course.</li>
+
+    <li>Get on Git/GitHub. Every employer expects it. Commit code daily, even if it’s messy.</li>
+</ul>
+
+<b>Phase 2: Make Things Move, Weeks 5-12</b>
+
+<ul>
+    <li>JavaScript, for real. Variables → DOM manipulation → fetch API → async/await. Skip frameworks until you can build a to-do app without YouTube.</li>
+
+    <li>Pick 1 framework. In 2026, React still dominates jobs, but Next.js is the default for new projects. Learn components, props, state, routing.</li>
+
+    <li>Build ugly, then make it pretty.</li>
+
+    <li>Function: form at first. Add Tailwind CSS once your JS works.</li>
+</ul>
+
+<h3>3. Build a Portfolio That Gets Replies</h3>
+
+<p>Your portfolio is not a gallery. It’s proof you solve problems.</p>
+
+<p><i><u>The 3-project rule:</u></i></p>
+
+<ul>
+    <li>Clone with a twist: Rebuild Airbnb/Stripe’s homepage, then add 1 feature they don’t have.</li>
+
+    <li>Solve your own problem: Track your gym sets, freelance invoices, or Accra bus routes.</li>
+
+    <li>Work for free, once: Redesign a site for a local business, church, or friend.</li>
+
+    <li>Each case study should answer: Problem → Your role → Process → Result with numbers.</li>
+</ul>
+
+<h3>4. Tools You Actually Need</h3>
+
+<ul>
+    <li>Can’t skip: VS Code, Figma, Git, Chrome DevTools, ChatGPT/Claude for debugging</li>
+
+    <li>
+        Learn 1 of each:
+        <br>CSS framework: Tailwind
+        <br>JS framework: Next.js
+        <br>CMS: Sanity or WordPress
+    </li>
+
+    <li>Ignore until you’re paid: Framer Motion, Three.js, Rust, Kubernetes.</li>
+</ul>
+
+<h3>5. How to Get Your First $500-$2000</h3>
+
+<ul>
+    <li>Freelance sites: Upwork and Fiverr still work if you niche down.</li>
+
+    <li>Local first: Every business around you needs better websites.</li>
+
+    <li>Open source + Twitter/Threads: Fix bugs and ship publicly.</li>
+
+    <li>Apply for internships even if they ask for experience.</li>
+</ul>
+
+<h3>6. Mindset Traps to Avoid</h3>
+
+<ul>
+    <li>Tutorial hell: Build more than you watch.</li>
+
+    <li>Framework hopping: Learn fundamentals first.</li>
+
+    <li>Perfectionism: Ship version 1.</li>
+
+    <li>Timeline reality: Consistency beats speed.</li>
+
+    <li>Next step today: Rebuild this page in HTML/CSS.</li>
+</ul>
+
+<div class="button-container">
+
+    <form action="Blog.html">
+        <button class="blogspot">Home</button>
+    </form>
+
+    <form action="When a student fail.html">
+        <button class="next-article">Next Blog</button>
+    </form>
+
+</div>
+
+<footer>
+    <p>
+        &copy; 2026 AzMatt Tech | All Rights Reserved
+    </p>
+</footer>
+
+</body>
+</html>

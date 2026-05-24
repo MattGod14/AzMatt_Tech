@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Sent</title>
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#22b1b6;
+    color:#fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    overflow-x:hidden;
+}
+
+/* MESSAGE BOX */
+.message-box{
+    max-width:800px;
+    width:100%;
+    padding:20px;
+}
+
+.message-box h1{
+    color:gold;
+    font-size:clamp(1.8rem, 5vw, 3rem);
+    font-style:italic;
+    font-weight:bold;
+    margin-bottom:20px;
+    line-height:1.3;
+}
+
+.message-box p{
+    color:gold;
+    font-size:clamp(1rem, 3vw, 1.4rem);
+    font-weight:bold;
+    line-height:1.7;
+}
+ footer{
+      width:100%;
+      text-align:center;
+      padding:15px;
+      background:#111;
+      color:#fff;
+      font-size:clamp(0.9rem, 2vw, 1rem);
+
+      /* Keeps footer at bottom naturally */
+      margin-top:auto;
+      border-top:1px solid #333;
+    }
+
+/* SMALL MOBILE DEVICES */
+@media (max-width:480px){
+
+    .message-box{
+        padding:10px;
+    }
+
+    .message-box h1{
+        margin-bottom:15px;
+    }
+
+    footer{
+        padding:12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="message-box">
+    <h1>Message submitted successfully.</h1>
+
+    <p>
+        Thanks for your interest in our services.
+        We'll get back to you as soon as possible.
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2026 AzMatt Tech | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
